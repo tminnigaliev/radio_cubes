@@ -1,3 +1,5 @@
+include <settings.scad>
+
 module cap_1x1(width, height, thickness)
 {
     width1=width-thickness;
@@ -20,7 +22,7 @@ module cap_1x1(width, height, thickness)
     }
 }
 
-cap_1x1(30,6,3.3);
+cap_1x1(cap_width, cap_height, cap_thickness);
 //ring(10,1,1);
 //arrow(1, 20, 3, 1);
 //transistor_npn(30, 1, 1);

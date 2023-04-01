@@ -1,16 +1,4 @@
-module cap_1x1(width, height, thickness)
-{
-    width1=width-thickness;
-    difference()
-    {
-        union()
-        {
-            cube([width, width, thickness*3/4]);
-            translate([thickness,thickness,0])cube([width-2*thickness, width-2*thickness, height]);
-        }
-        translate([width/2,width/2,0])rotate([0,0,45])translate([-width1/2,-width1/2,thickness*3/4]) cube([width1,width1,height]);
-    }
-}
+include <settings.scad>
 
 module radio_cube_1x1(width, height, thickness)
 {
@@ -61,6 +49,4 @@ module radio_cube_1x1(width, height, thickness)
     }
 }
 
-radio_cube_1x1(30, 16, 3.3);
-
-translate([40, 0, 0]) cap_1x1(30,6,3.3);
+radio_cube_1x1(cube_width, cube_height, cube_thickness);

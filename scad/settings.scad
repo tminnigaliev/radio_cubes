@@ -6,5 +6,5 @@ cap_width=30;
 cap_height=6;
 cap_thickness=3.3;
 
-glyph_depth=0.3;
+glyph_depth=0.5;
 glyph_thickness=1;
