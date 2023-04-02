@@ -1,15 +1,15 @@
 include <settings.scad>
 
-module radio_cube_2x2(width, height, thickness)
+module radio_cube_2x1(width, height, thickness)
 {
     width2 = width;
     width = 2*width + 1;
     difference()
     {
-        cube([width,width,height]);
+        cube([width,width2,height]);
         union()
         {
-            translate([thickness,thickness,thickness+1.2]) cube([width-2*thickness,width-2*thickness,height+10]);
+            translate([thickness,thickness,thickness+1.2]) cube([width-2*thickness,width2-2*thickness,height+10]);
             
             //-y
             translate([width2/2,2.0,8])rotate([90,0,0])cylinder(r=14.5/2, h=2.6);
@@ -21,13 +21,13 @@ module radio_cube_2x2(width, height, thickness)
             translate([3*width2/2-3,-0.2,5.8])cube([8,20,15]);
             
             // y
-            translate([width2/2,width+0.6,8])rotate([90,0,0])cylinder(r=14.5/2, h=2.6);
-            translate([width2/2,width-thickness,8])rotate([90,0,0])cylinder(r=14.5/2, h=1);
-            translate([width2/2-4, width-10,5.8])cube([8,20,15]);
-
-            translate([3*width2/2+1,width+0.6,8])rotate([90,0,0])cylinder(r=14.5/2, h=2.6);
-            translate([3*width2/2+1,width-thickness,8])rotate([90,0,0])cylinder(r=14.5/2, h=1);
-            translate([3*width2/2-3, width-10,5.8])cube([8,20,15]);
+            translate([width2/2,width2+0.6,8])rotate([90,0,0])cylinder(r=14.5/2, h=2.6);
+            translate([width2/2,width2-thickness,8])rotate([90,0,0])cylinder(r=14.5/2, h=1);
+            translate([width2/2-4, width2-10,5.8])cube([8,20,15]);
+    
+            translate([3*width2/2+1,width2+0.6,8])rotate([90,0,0])cylinder(r=14.5/2, h=2.6);
+            translate([3*width2/2+1,width2-thickness,8])rotate([90,0,0])cylinder(r=14.5/2, h=1);
+            translate([3*width2/2-3, width2-10,5.8])cube([8,20,15]);
             
             //-x
             translate([2.0,width2/2,8])rotate([0,-90,0])cylinder(r=14.5/2, h=2.6);
@@ -67,5 +67,5 @@ module radio_cube_2x2(width, height, thickness)
     }
 }
 
-radio_cube_2x2(cube_width, cube_height, cube_thickness);
+radio_cube_2x1(cube_width, cube_height, cube_thickness);
 
