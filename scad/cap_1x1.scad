@@ -18,6 +18,11 @@ module cap_1x1(width, height, thickness)
             translate([0.25*thickness,0,0]) rotate([0,-45,0]) translate([-width, -0.5*width, -0.5*height]) cube([width, 2*width, 2*height]);
             translate([width-0.25*thickness,0,0]) rotate([0,45,0]) translate([0, 0, -0.5*height]) cube([width, 2*width, 2*height]);
             translate([0,width-0.25*thickness,0]) rotate([-45,0,0]) translate([-0.5*width, 0, -0.5*height]) cube([2*width, width, 2*height]);
+            
+            translate([width/2, thickness-1, -0.5]) cylinder(r=1.15, h=height*1.5, $fn=80);
+            translate([width/2, width-thickness+1, -0.5]) cylinder(r=1.15, h=height*1.5, $fn=80);
+            translate([thickness-1, width/2, -0.5]) cylinder(r=1.15, h=height*1.5, $fn=80);
+            translate([width-thickness+1, width/2, -0.5]) cylinder(r=1.15, h=height*1.5, $fn=80);
         }
     }
 }

@@ -22,6 +22,7 @@ clean:
 
 stl/%.stl: scad/%.scad
 	openscad.exe -o $@ $<
+#	openscad.exe -m make -o $@ -d $@.deps $<
 
 #./stls/%.png: ./scad/%.scad
 #	openscad --imgsize=1024,768 --projection=ortho --autocenter -o $@ -d deps/$(notdir $(addsuffix .deps, $(basename $@))) $<
