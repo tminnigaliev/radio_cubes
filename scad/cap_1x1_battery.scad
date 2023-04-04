@@ -6,8 +6,8 @@ module cap_1x1_battery(width, height, thickness)
 {
     difference()
     {
-        cap_1x1(width, height, thickness);
-        translate([thickness/2,width/2,-0.01]) battery(7*width/8, width/4, glyph_thickness, glyph_depth);
+        cap_1x1(width, height, thickness, 3);
+        translate([0,width/2,-0.01]) battery(width, width/2, glyph_thickness, glyph_depth);
     }
 }
 

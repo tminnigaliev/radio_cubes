@@ -6,8 +6,8 @@ module cap_1x1_ground(width, height, thickness)
 {
     difference()
     {
-        cap_1x1(width, height, thickness);
-        translate([0,width/2,-0.01]) ground(width, width/4, glyph_thickness, glyph_depth);
+        cap_1x1(width, height, thickness, 2);
+        translate([0,width/2,-0.01]) ground(width, width/3, glyph_thickness, glyph_depth);
     }
 }
 

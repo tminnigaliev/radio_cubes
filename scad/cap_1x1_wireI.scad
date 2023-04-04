@@ -5,7 +5,7 @@ module cap_1x1_wireI(width, height, thickness)
 {
     difference()
     {
-        cap_1x1(width, height, thickness);
+        cap_1x1(width, height, thickness, 3);
         translate([0,(width-glyph_thickness)/2,-0.01]) cube([width, glyph_thickness, glyph_depth]);
     }
 }

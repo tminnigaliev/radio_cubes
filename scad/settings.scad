@@ -6,5 +6,8 @@ cap_width=30;
 cap_height=6;
 cap_thickness=3.3;
 
-glyph_depth=0.5;
-glyph_thickness=1;
+glyph_depth=0.7;
+glyph_thickness=1.5;
+
+photo_resitor_hole_r = 3.1;
+spring_contact_hole_r = 3.35;

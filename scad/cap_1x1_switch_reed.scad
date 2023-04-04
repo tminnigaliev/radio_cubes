@@ -6,7 +6,7 @@ module cap_1x1_switch_reed(width, height, thickness)
 {
     difference()
     {
-        cap_1x1(width, height, thickness);
+        cap_1x1(width, height, thickness, 3);
         translate([0,width/2,-0.01]) switch_reed(width, width/3, glyph_thickness, glyph_depth);
     }
 }

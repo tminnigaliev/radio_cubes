@@ -9,7 +9,7 @@ module battery(length, width, thickness, height)
     translate([(length+width/4)/2,-width/4, 0])cube([thickness, width/2, height]);
 
     
-    translate([length/2-width/2, 2*width/4,0]) plus(width/4, thickness, height);
+    translate([length/2-width/2, 2*width/4,0]) plus(width/2, thickness, height);
 }
 
 battery(30, 12, 1, 1);
