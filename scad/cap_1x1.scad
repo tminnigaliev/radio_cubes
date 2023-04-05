@@ -8,7 +8,7 @@ module cap_1x1(width, height, thickness, holes_mask)
         union()
         {
             cube([width, width, thickness*3/4]);
-            translate([thickness,thickness,0])cube([width-2*thickness, width-2*thickness, height]);
+            translate([thickness,thickness,0])cube([width-2*(thickness-0.025), width-2*(thickness+0.025), height]);
         }
         union()
         {
