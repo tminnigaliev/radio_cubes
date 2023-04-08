@@ -10,8 +10,8 @@ module cap_1x1_inductor(width, height, thickness)
         union()
         {
             translate([width/6,width/1.65,-0.01]) rotate([0,0,-90]) sym_inductor(2*width/3, glyph_thickness, glyph_depth);
-            translate([0,(width-glyph_thickness)/2,-0.01])cube([width/5,glyph_thickness,glyph_depth]);
-            translate([4*width/5,(width-glyph_thickness)/2,-0.01])cube([width/5,glyph_thickness,glyph_depth]);
+            translate([width/6+glyph_thickness/2,width/2+glyph_thickness/2,-0.01])rotate([0,0,180])cube([width/6,glyph_thickness,glyph_depth]);
+            translate([5*width/6-glyph_thickness/2,(width-glyph_thickness)/2,-0.01])cube([width/5,glyph_thickness,glyph_depth]);
         }
     }
 }

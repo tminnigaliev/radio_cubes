@@ -7,7 +7,7 @@ module cap_1x1_npn_transistor_flipped(width, height, thickness)
     mirror([1,0,0]) difference()
     {
         cap_1x1(width, height, thickness, 14);
-        translate([3*width/8-1.7,width/2,-0.01])mirror([0,1,0]) transistor_npn(25, glyph_thickness, glyph_depth);
+        translate([width/2,width/2,-0.01])mirror([0,1,0]) transistor_npn(25, glyph_thickness, glyph_depth);
     }
 }
 

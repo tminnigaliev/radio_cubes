@@ -33,11 +33,11 @@ module sym_inductor(height, depth, thickness)
     //translate([0,-thickness/2,0]) cube([height/6, 2*thickness, depth]);
     r1 = height/(2*n1);
     
-    translate([height/6,r1+thickness/2,0]) arc_3d(r1, [-90, 90], 2*thickness, depth, 120);
+    translate([height/6,r1+thickness/2,0]) arc_3d(r1+thickness/2, [-90, 90], thickness, depth, 120);
     
-    translate([height/6,3*r1+1.5*thickness,0]) arc_3d(r1, [-90, 90], 2*thickness, depth, 120);
+    translate([height/6,3*r1+1.5*thickness,0]) arc_3d(r1+thickness/2, [-90, 90], thickness, depth, 120);
 
-    translate([height/6,5*r1+2.5*thickness,0]) arc_3d(r1, [-90, 90], 2*thickness, depth, 120);
+    translate([height/6,5*r1+2.5*thickness,0]) arc_3d(r1+thickness/2, [-90, 90], thickness, depth, 120);
 
     //translate([0,height-1.5*thickness,0]) cube([height/6, 2*thickness, depth]);
 }
