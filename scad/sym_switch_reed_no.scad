@@ -1,8 +1,9 @@
-use <sym_switch.scad>
+use <sym_switch_no.scad>
 
-module switch_reed(length, width, thickness, height)
+// no = normally opened
+module switch_reed_no(length, width, thickness, height)
 {
-    switch(length, width, thickness, height);
+    switch_no(length, width, thickness, height);
     radius = width/1.15;
     translate([2*length/4+thickness/2,0,0]) difference()
     {
@@ -11,4 +12,4 @@ module switch_reed(length, width, thickness, height)
     }
 }
 
-switch_reed(30, 10, 1, 0.5);
+switch_reed_no(30, 10, 1, 0.5);

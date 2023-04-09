@@ -17,6 +17,7 @@ $(info $$TARGETS is [${TARGETS}])
 
 all: $(TARGETS)
 
+.PHONY: clean
 clean:
 	rm ./stl/*.stl
 

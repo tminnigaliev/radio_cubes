@@ -7,7 +7,7 @@ module cap_1x1_resistor(width, height, thickness)
     difference()
     {
         cap_1x1(width, height, thickness, 3);
-        translate([0,width/2,-0.01])resistor(width, width/6, glyph_thickness, glyph_depth);
+        translate([0,width/2,-0.01])resistor(width, width/4, glyph_thickness, glyph_depth);
     }
 }
 
