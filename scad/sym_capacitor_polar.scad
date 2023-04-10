@@ -19,7 +19,7 @@ module capacitor_polar(length, width, thickness, height)
     translate([(length-width/2)/2,-width/2,0]) cube([width/4,thickness,height]);
     
     //+
-    translate([length/2-width/2-thickness, 2*width/4,0]) plus(width/2, thickness, height);
+    translate([length/2-2*width/3-thickness, 2*width/4,0]) plus(width/1.7, thickness, height);
     
     //right vertical
     translate([(length+width/2)/2,-width/2, 0])cube([thickness, width, height]);

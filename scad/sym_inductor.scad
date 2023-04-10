@@ -27,19 +27,27 @@ module arc_3d(radius, angles, width, depth, fn)
     linear_extrude(depth) arc(radius, angles, width);
 }
 
-module sym_inductor(height, depth, thickness)
+module sym_inductor(height, depth, thickness, angle)
 {
-    n1 = 3.33;
+    n1 = 3;
     //translate([0,-thickness/2,0]) cube([height/6, 2*thickness, depth]);
-    r1 = height/(2*n1);
+    r1 = height/(2*n1+4);
     
-    translate([height/6,r1+thickness/2,0]) arc_3d(r1+thickness/2, [-90, 90], thickness, depth, 120);
+    rotate([0,0,-angle])translate([-thickness/2, 0, 0]) cube([thickness, 2*r1, depth]);
     
-    translate([height/6,3*r1+1.5*thickness,0]) arc_3d(r1+thickness/2, [-90, 90], thickness, depth, 120);
+    translate([2*r1*sin(angle), 2*r1*cos(-angle), 0])
+    {
+        translate([-thickness/2, r1,0]) arc_3d(r1, [-90, 90], thickness, depth, 120);
+    
+        translate([-thickness/2,3*r1,0]) arc_3d(r1, [-90, 90], thickness, depth, 120);
 
-    translate([height/6,5*r1+2.5*thickness,0]) arc_3d(r1+thickness/2, [-90, 90], thickness, depth, 120);
+        translate([-thickness/2,5*r1,0]) arc_3d(r1, [-90, 90], thickness, depth, 120);
 
+        translate([0,6*r1,0]) rotate([0,0,angle]) translate([-thickness/2, 0, 0]) cube([thickness, 2*r1, depth]);
+    }
+
+    
     //translate([0,height-1.5*thickness,0]) cube([height/6, 2*thickness, depth]);
 }
 
-sym_inductor(30, 0.5, 1);
+sym_inductor(30, 0.5, 1, 0);

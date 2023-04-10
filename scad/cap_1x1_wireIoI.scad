@@ -9,7 +9,7 @@ module cap_1x1_wireIoI(width, height, thickness)
     {
         union()
         {
-            cap_1x1(width, height, thickness, 3);
+            cap_1x1(width, height, thickness, 0); //3
             translate([width/2,width/2,0]) cylinder(r=(cr2+2), h=thickness*1.5);
         }
         translate([0,(width-glyph_thickness)/2,-0.01]) cube([width, glyph_thickness, glyph_depth]);

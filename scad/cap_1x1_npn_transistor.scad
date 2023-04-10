@@ -6,7 +6,7 @@ module cap_1x1_npn_transistor(width, height, thickness)
 {
     difference()
     {
-        cap_1x1(width, height, thickness, 14);
+        cap_1x1(width, height, thickness, 0); //14
         translate([width/2,width/2,-0.01])
         mirror([0,1,0]) transistor_npn(25, glyph_thickness, glyph_depth);
     }
