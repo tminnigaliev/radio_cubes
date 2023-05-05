@@ -90,48 +90,6 @@ solid OpenSCAD_Model
       vertex 26.7 11 10.2
     endloop
   endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 26.7 3.3 16
-      vertex 19 3.3 5.8
-      vertex 19 3.3 16
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 19 3.3 5.8
-      vertex 26.7 3.3 0.919134
-      vertex 11 3.3 5.8
-    endloop
-  endfacet
-  facet normal 0 1 -0
-    outer loop
-      vertex 26.7 3.3 0.919134
-      vertex 19 3.3 5.8
-      vertex 26.7 3.3 16
-    endloop
-  endfacet
-  facet normal 0 1 -0
-    outer loop
-      vertex 11 3.3 5.8
-      vertex 3.3 3.3 16
-      vertex 11 3.3 16
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 11 3.3 5.8
-      vertex 3.3 3.3 0.919134
-      vertex 3.3 3.3 16
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 3.3 3.3 0.919134
-      vertex 11 3.3 5.8
-      vertex 26.7 3.3 0.919134
-    endloop
-  endfacet
   facet normal 0 -1 0
     outer loop
       vertex 3.3 26.7 16
@@ -179,6 +137,48 @@ solid OpenSCAD_Model
       vertex 26.7 26.7 0.919135
       vertex 19 26.7 5.8
       vertex 3.3 26.7 0.919135
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 26.7 3.3 16
+      vertex 19 3.3 5.8
+      vertex 19 3.3 16
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 19 3.3 5.8
+      vertex 26.7 3.3 0.919134
+      vertex 11 3.3 5.8
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 26.7 3.3 0.919134
+      vertex 19 3.3 5.8
+      vertex 26.7 3.3 16
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 11 3.3 5.8
+      vertex 3.3 3.3 16
+      vertex 11 3.3 16
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 11 3.3 5.8
+      vertex 3.3 3.3 0.919134
+      vertex 3.3 3.3 16
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 3.3 3.3 0.919134
+      vertex 11 3.3 5.8
+      vertex 26.7 3.3 0.919134
     endloop
   endfacet
   facet normal -0.990679 0 -0.136218
