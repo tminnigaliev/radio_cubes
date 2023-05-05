@@ -1,6 +1,7 @@
 cube_width=30;
 cube_height=16;
 cube_thickness=3.3;
+cube_bottom_thickness = cube_thickness+1.2;
 
 cap_width=30;
 cap_height=6;
